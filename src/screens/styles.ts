@@ -4,13 +4,14 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
-    alignItems: 'center',
     backgroundColor: 'white',
+    padding: 10,
   },
   profileHeader: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 8,
+    justifyContent: 'space-between',
   },
   profileIcon: {
     width: 40,
@@ -24,10 +25,16 @@ export const styles = StyleSheet.create({
   postDate: {
     color: 'gray',
   },
+  postTextContainer: {
+    marginBottom: 10,
+  },
   postText: {
     fontSize: 14,
     lineHeight: 20,
-    marginBottom: 10,
+  },
+  inlineLink: {
+    fontSize: 14,
+    color: 'black',
   },
   linkText: {
     color: '#1E90FF',
@@ -41,37 +48,55 @@ export const styles = StyleSheet.create({
   },
   interactionRow: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     marginVertical: 10,
+    width: '100%',
   },
   icon: {
     marginRight: 8,
   },
   likesText: {
-    marginRight: 20,
+    marginLeft: 5,
   },
   commentSection: {
+    borderTopWidth: 1,
+    borderTopColor: '#ccc',
+    paddingTop: 10,
     marginTop: 20,
+    paddingRight: 10,
   },
   comment: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 10,
+    rowGap: 10,
+    paddingRight: 10,
   },
   commentIcon: {
     width: 30,
     height: 30,
     marginRight: 10,
   },
+  commentHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%',
+    columnGap: 10,
+  },
   commentName: {
     fontWeight: 'bold',
+  },
+  commentDate: {
+    color: 'gray',
+    paddingRight: 15,
+  },
+  commentTextContainer: {
+    marginTop: 4,
   },
   commentText: {
     fontSize: 14,
     lineHeight: 18,
-  },
-  logo: {
-    width: 60,
-    height: 60,
-    marginBottom: 12,
   },
 });
