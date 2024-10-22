@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Image, ActivityIndicator } from 'react-native';
+import { Image, Text, View } from 'react-native';
 import supabase from 'supabase/client';
 import HeartIcon from '../../assets/heart-icon.svg';
 import ShareIcon from '../../assets/messenger-icon.svg';
 import ProfilePlaceholder from '../../assets/profile-placeholder-icon.svg';
-import { styles } from './styles'; 
+import { styles } from './styles';
 
 export default function PostScreen() {
   interface Post {
@@ -45,7 +45,7 @@ export default function PostScreen() {
 
   return (
     <View style={styles.container}>
-      {postData.map((post) => (
+      {postData.map(post => (
         <View key={post.id}>
           {/* Profile Header */}
           <View style={styles.profileHeader}>
@@ -92,7 +92,8 @@ export default function PostScreen() {
                   <Text style={styles.commentDate}>September 20</Text>
                 </View>
                 <Text style={styles.commentText}>
-                  This organization is doing amazing work tackling the complex root causes of the issue.
+                  This organization is doing amazing work tackling the complex
+                  root causes of the issue.
                 </Text>
               </View>
             </View>

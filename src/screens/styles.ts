@@ -67,17 +67,16 @@ export const styles = StyleSheet.create({
     width: 30,
     height: 30,
     marginRight: 10,
-  
   },
   commentBody: {
-    flex: 1, 
+    flex: 1,
   },
   profileIcon: {
     width: 40,
   },
   comment: {
-    flexDirection: 'row',  
-    alignItems: 'flex-start',  
+    flexDirection: 'row',
+    alignItems: 'flex-start',
     marginBottom: 10,
     paddingRight: 10,
   },
