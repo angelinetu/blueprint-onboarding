@@ -13,17 +13,14 @@ export const styles = StyleSheet.create({
     marginBottom: 8,
     justifyContent: 'space-between',
   },
-  profileIcon: {
-    width: 40,
-    height: 40,
-    marginRight: 10,
-  },
   profileName: {
     fontWeight: 'bold',
     fontSize: 16,
+    marginLeft: 8,
   },
   postDate: {
     color: 'gray',
+    paddingLeft: 120,
   },
   postTextContainer: {
     marginBottom: 10,
@@ -66,17 +63,23 @@ export const styles = StyleSheet.create({
     marginTop: 20,
     paddingRight: 10,
   },
-  comment: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 10,
-    rowGap: 10,
-    paddingRight: 10,
-  },
   commentIcon: {
     width: 30,
     height: 30,
     marginRight: 10,
+  
+  },
+  commentBody: {
+    flex: 1, 
+  },
+  profileIcon: {
+    width: 40,
+  },
+  comment: {
+    flexDirection: 'row',  
+    alignItems: 'flex-start',  
+    marginBottom: 10,
+    paddingRight: 10,
   },
   commentHeader: {
     flexDirection: 'row',
@@ -87,15 +90,17 @@ export const styles = StyleSheet.create({
   },
   commentName: {
     fontWeight: 'bold',
+    fontSize: 14,
   },
   commentDate: {
     color: 'gray',
-    paddingRight: 15,
+    paddingRight: 12,
   },
   commentTextContainer: {
     marginTop: 4,
   },
   commentText: {
+    marginTop: 2,
     fontSize: 14,
     lineHeight: 18,
   },
